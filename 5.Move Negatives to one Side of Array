@@ -1,0 +1,22 @@
+
+
+From Youtube solve 
+While loop solve
+
+Void Move(int arr[], int n){
+	Int left = 0
+	Int right = n - 1
+	while(left < right){
+	while(arr[left] < 0) left + +
+	while(arr[right] >= 0) right - -
+	if(left > right){
+		Break
+	}
+	Int temp = arr[left]
+	Arr[left] = arr[right]
+	Arr[right] = temp
+}
+}
+
+
+
