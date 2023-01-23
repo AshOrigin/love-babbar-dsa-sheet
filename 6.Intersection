@@ -1,0 +1,55 @@
+-------Without sorting----------
+void intersection(vector<int> &a, vector<int> &b, int n, int m){
+    vector<int> res;
+    int i = 0, j = 0;
+    while(i < n){
+        if(a[i] == b[j]){
+            if(a[i] != a[i-1]){
+                res.push_back(a[i]);
+            }
+            i++;
+            j = 0;
+        }else{
+            j++;
+            if(j == n-1){
+                j = 0;
+                i++;
+            }
+        }
+    }
+    for(auto i : res){
+        cout << i << " ";
+    }
+
+
+--------with sorting----------
+
+
+Intersection 
+With sorted array
+
+void intersection(vector<int> &a,vector<int>&b,int n,int m){
+
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+
+    int i = 0, j = 0;
+    vector<int> res;
+    while(i < n && j < m){
+        if(a[i] < b[j]){
+            i++;
+        }
+        else if(a[i] > b[j]){
+            j++;
+        }
+        else{
+            res.push_back(a[i]);
+            i++;j++;
+        }
+    }
+    for(auto i : res){
+        cout << i << " ";
+    }
+}
+
+
