@@ -1,0 +1,29 @@
+Input     : 3 2 1 4
+Output  : minimum : 1
+	        maximum : 4
+
+Built in function
+Void minimax(int arr[], int n){
+	Int minimum = INT_MAX;
+	Int maximum = 0;
+	for(int i = 0; i < n; i++){
+	  Minimum = min(minimum, arr[i]);
+	  Maximum = max(maximum, arr[i]);
+  }
+  Cout << minimum << maximum << endl;
+}
+
+***Without built in function***
+Void minimax(int arr[], int n){
+	Int minimum = INT_MAX;
+	Int maximum = 0;
+	for(int i = 0; i < n; i++){
+		if(minimum > arrr[i]){
+			Minimum = arr[i]
+    }
+    if(maximum < arr[i]){
+	    Maximum = arr[i]
+    }
+  }
+  cout << minimum << maximum << endl;
+}
