@@ -1,0 +1,16 @@
+
+
+Input :
+4	  n
+4 3 2 1	  array n follows
+3            kth smallest element
+Output : 
+3
+
+Basic approach
+Int kth(int arr[], int n){
+	Int k
+	Cin >> k
+	sort(arr, arr+n)
+	Return arr[k-1]
+}
